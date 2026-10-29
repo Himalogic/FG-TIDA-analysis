@@ -1,0 +1,127 @@
+{
+  "cases": [
+    "UC17-01",
+    "UC17-02",
+    "UC17-03",
+    "UC17-04",
+    "UC17-05",
+    "UC17-06",
+    "UC17-07",
+    "UC17-09"
+  ],
+  "judges": [
+    "J1",
+    "J2",
+    "J3",
+    "J4",
+    "J5",
+    "J6"
+  ],
+  "rounds": 1,
+  "spec_version": "planted-judge-spec-1.0",
+  "verdicts": [
+    {
+      "case": "UC17-01",
+      "round": 1,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "permit",
+        "J3": "permit",
+        "J4": "permit",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 1,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "permit",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "permit",
+        "J6": "remediate"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 1,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "permit",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "remediate"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 1,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "permit",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "remediate"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 1,
+      "verdicts": {
+        "J1": "block",
+        "J2": "permit",
+        "J3": "block",
+        "J4": "block",
+        "J5": "block",
+        "J6": "block"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 1,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "permit",
+        "J3": "escalate",
+        "J4": "escalate",
+        "J5": "escalate",
+        "J6": "escalate"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 1,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "indeterminate",
+        "J3": "indeterminate",
+        "J4": "indeterminate",
+        "J5": "indeterminate",
+        "J6": "indeterminate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 1,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "permit",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "remediate"
+      }
+    }
+  ],
+  "vocabulary": [
+    "permit",
+    "remediate",
+    "escalate",
+    "block",
+    "indeterminate"
+  ]
+}
