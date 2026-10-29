@@ -238,7 +238,7 @@ Mean deviations per round at 25 rounds, observed against expected (section 7): h
 | AC-4 | Dissenter not flagged at 25 rounds; at 1 and 5 rounds it can be (15%, 12%) | Not flagged at 25 rounds in either variant. **Flagged in the subtle 5-round run** (12 deviations, threshold 10.59), an outcome given a 12% chance in advance. Not flagged in the other five runs. |
 | AC-5 | Shared blind spot never detected | Held in all six runs. The majority verdict on UC17-02 was remediate in every round of every run, and nothing in any `flags.json` marks it as wrong. |
 | AC-6 | Honest judges' independence declared, never established | Held. The four honest judges gave the same verdict on UC17-02 (remediate) in every round of every run. |
-| AC-7 | After unblinding: planted judge wrong on its changed cases; dissenter right on UC17-02; majority wrong on UC17-02 | Planted judge gave its planted verdict on every changed case in every round. Majority wrong on UC17-02 in every round. The dissenter gave the correct verdict (permit) on UC17-02 in 1 of 1, 5 of 5 and 21 of 25 rounds (subtle) and 1 of 1, 4 of 5 and 20 of 25 rounds (gross); in the other rounds it made one of its section 6 random errors on that case. |
+| AC-7 | After unblinding: planted judge wrong on its changed cases; dissenter right on UC17-02; majority wrong on UC17-02 | **As written, not met in three runs** (subtle 25, gross 5, gross 25), because the wording is defective (see "AC-7 wording defect" below). Planted judge gave its planted verdict on every changed case in every round. Majority wrong on UC17-02 in every round. The dissenter gave the correct verdict (permit) on UC17-02 in 1 of 1, 5 of 5 and 21 of 25 rounds (subtle) and 1 of 1, 4 of 5 and 20 of 25 rounds (gross); in the other rounds it made one of its section 6 random errors on that case. |
 | AC-8 | Honest judges not flagged at 5 or 25 rounds; about 1 in 10 chance one is flagged at 1 round | No honest judge was flagged in any run. |
 
 ### What the runs show
@@ -249,9 +249,11 @@ Mean deviations per round at 25 rounds, observed against expected (section 7): h
 
 This is a scripted mechanism demonstration. It is not evidence about independent judges, real evaluators or any model's performance (section 1).
 
-### Change after the first unblinding
+### AC-7 wording defect
 
-The first `unblind.py` output checked "dissenter right on UC17-02" as true or false across all rounds. That was stricter than section 6, which gives the dissenter the same 10% random error on UC17-02 as on every other case, so it read false in three runs. The check now reports the count of rounds in which the dissenter was right, shown in the AC-7 row above. In the same edit, a probability stored as a float that rounds to 1.0 is now printed as ">99.99%" and no longer as "100%". Neither change touches `generate.py`, `detect.py`, any verdict, any deviation count or any flag. All six reports were regenerated from the same sealed files.
+AC-7 says "the dissenter is right on UC17-02." That wording contradicted section 6 before any run: section 6 gives the dissenter the same 10% random error on UC17-02 as on every other case, so in a run of several rounds it is expected to be wrong there some of the time. As written, AC-7 was not met in three runs (subtle 25, gross 5, gross 25), for the reason section 6 predicts. This is recorded as a defect in the specification. The wording will be corrected in specification 1.1 to state the expectation per round, consistent with section 6. The acceptance criteria in this version are not changed after the run. (Thanks to Cyril Gorlla for the framing, FG-TIDA/themes#21, 29 October 2026.)
+
+The first `unblind.py` output checked this criterion as true or false across all rounds. After the first unblinding, the check was changed to report the count of rounds in which the dissenter was right, shown in the AC-7 row above. In the same edit, a probability stored as a float that rounds to 1.0 is now printed as ">99.99%" and no longer as "100%". Neither change touches `generate.py`, `detect.py`, any verdict, any deviation count or any flag. All six reports were regenerated from the same sealed files.
 
 ### Run digests
 
