@@ -1,0 +1,370 @@
+{
+  "answer_key": {
+    "UC17-01": "permit",
+    "UC17-02": "permit",
+    "UC17-03": "remediate",
+    "UC17-04": "remediate",
+    "UC17-05": "block",
+    "UC17-06": "escalate",
+    "UC17-07": "indeterminate",
+    "UC17-09": "remediate"
+  },
+  "checks": {
+    "AC-2 gross planted judge flagged": null,
+    "AC-3 subtle planted judge flagged": true,
+    "AC-4 dissenter not flagged": true,
+    "AC-5 UC17-02 majority is remediate in every round": true,
+    "AC-6 honest judges agree on UC17-02 in every round": true,
+    "AC-7 planted judge wrong on its changed cases every round": true,
+    "AC-7 rounds in which the dissenter gave the correct verdict on UC17-02": "21 of 25",
+    "AC-8 no honest judge flagged": true
+  },
+  "digests": {
+    "flags.json": "0be3180af9a886ab8352d9804d41740eab0eab5e1f9df421dba4ab69beb77bc7",
+    "sealed.json": "ab83e9ed9fb9c7f4313db9589861e343f40f57539d8133b1bab3c17a982dc6f4",
+    "verdicts.json": "ed1b9fb2fcbe4b8882a6750cb450dd594ad23c4eb5b4b5332febfcc6a3bcae8c"
+  },
+  "judges": [
+    {
+      "by_direction": {
+        "more permissive": 5,
+        "more severe": 6,
+        "off-scale": 6
+      },
+      "expected_per_round": 0.6968694140625,
+      "flagged": false,
+      "items": {
+        "UC17-01": {
+          "block": 2,
+          "escalate": 1,
+          "indeterminate": 1,
+          "permit": 20,
+          "remediate": 1
+        },
+        "UC17-02": {
+          "remediate": 25
+        },
+        "UC17-03": {
+          "indeterminate": 1,
+          "remediate": 24
+        },
+        "UC17-04": {
+          "block": 1,
+          "indeterminate": 1,
+          "remediate": 23
+        },
+        "UC17-05": {
+          "block": 22,
+          "remediate": 3
+        },
+        "UC17-06": {
+          "block": 1,
+          "escalate": 23,
+          "remediate": 1
+        },
+        "UC17-07": {
+          "block": 1,
+          "escalate": 1,
+          "indeterminate": 23
+        },
+        "UC17-09": {
+          "indeterminate": 1,
+          "permit": 1,
+          "remediate": 23
+        }
+      },
+      "judge": "H1",
+      "label": "J3",
+      "mean_per_round": 0.68,
+      "predicted_flag_probability": 7.758347889795772e-14,
+      "role": "honest",
+      "total_deviations": 17,
+      "wrong_items": 42
+    },
+    {
+      "by_direction": {
+        "more permissive": 7,
+        "more severe": 6,
+        "off-scale": 8
+      },
+      "expected_per_round": 0.6968694140625,
+      "flagged": false,
+      "items": {
+        "UC17-01": {
+          "block": 1,
+          "indeterminate": 1,
+          "permit": 23
+        },
+        "UC17-02": {
+          "remediate": 25
+        },
+        "UC17-03": {
+          "escalate": 1,
+          "indeterminate": 3,
+          "remediate": 21
+        },
+        "UC17-04": {
+          "block": 2,
+          "permit": 1,
+          "remediate": 22
+        },
+        "UC17-05": {
+          "block": 20,
+          "escalate": 1,
+          "permit": 2,
+          "remediate": 2
+        },
+        "UC17-06": {
+          "escalate": 24,
+          "permit": 1
+        },
+        "UC17-07": {
+          "block": 1,
+          "escalate": 1,
+          "indeterminate": 22,
+          "remediate": 1
+        },
+        "UC17-09": {
+          "block": 2,
+          "escalate": 1,
+          "indeterminate": 1,
+          "remediate": 21
+        }
+      },
+      "judge": "H2",
+      "label": "J4",
+      "mean_per_round": 0.84,
+      "predicted_flag_probability": 7.758347889795772e-14,
+      "role": "honest",
+      "total_deviations": 21,
+      "wrong_items": 47
+    },
+    {
+      "by_direction": {
+        "more permissive": 8,
+        "more severe": 5,
+        "off-scale": 6
+      },
+      "expected_per_round": 0.6968694140625,
+      "flagged": false,
+      "items": {
+        "UC17-01": {
+          "escalate": 1,
+          "permit": 23,
+          "remediate": 1
+        },
+        "UC17-02": {
+          "remediate": 25
+        },
+        "UC17-03": {
+          "block": 1,
+          "remediate": 24
+        },
+        "UC17-04": {
+          "escalate": 1,
+          "indeterminate": 1,
+          "remediate": 23
+        },
+        "UC17-05": {
+          "block": 20,
+          "escalate": 2,
+          "indeterminate": 1,
+          "remediate": 2
+        },
+        "UC17-06": {
+          "block": 1,
+          "escalate": 22,
+          "permit": 2
+        },
+        "UC17-07": {
+          "block": 1,
+          "indeterminate": 23,
+          "permit": 1
+        },
+        "UC17-09": {
+          "indeterminate": 1,
+          "permit": 1,
+          "remediate": 23
+        }
+      },
+      "judge": "H3",
+      "label": "J1",
+      "mean_per_round": 0.76,
+      "predicted_flag_probability": 7.758347889795772e-14,
+      "role": "honest",
+      "total_deviations": 19,
+      "wrong_items": 42
+    },
+    {
+      "by_direction": {
+        "more permissive": 4,
+        "more severe": 7,
+        "off-scale": 6
+      },
+      "expected_per_round": 0.6968694140625,
+      "flagged": false,
+      "items": {
+        "UC17-01": {
+          "escalate": 1,
+          "permit": 24
+        },
+        "UC17-02": {
+          "remediate": 25
+        },
+        "UC17-03": {
+          "block": 1,
+          "escalate": 2,
+          "remediate": 22
+        },
+        "UC17-04": {
+          "indeterminate": 2,
+          "remediate": 23
+        },
+        "UC17-05": {
+          "block": 23,
+          "permit": 1,
+          "remediate": 1
+        },
+        "UC17-06": {
+          "block": 1,
+          "escalate": 22,
+          "permit": 1,
+          "remediate": 1
+        },
+        "UC17-07": {
+          "block": 2,
+          "indeterminate": 23
+        },
+        "UC17-09": {
+          "block": 3,
+          "indeterminate": 1,
+          "remediate": 21
+        }
+      },
+      "judge": "H4",
+      "label": "J5",
+      "mean_per_round": 0.68,
+      "predicted_flag_probability": 7.758347889795772e-14,
+      "role": "honest",
+      "total_deviations": 17,
+      "wrong_items": 42
+    },
+    {
+      "by_direction": {
+        "more permissive": 25,
+        "more severe": 3,
+        "off-scale": 13
+      },
+      "expected_per_round": 1.6718694140625,
+      "flagged": false,
+      "items": {
+        "UC17-01": {
+          "indeterminate": 1,
+          "permit": 24
+        },
+        "UC17-02": {
+          "escalate": 1,
+          "indeterminate": 2,
+          "permit": 21,
+          "remediate": 1
+        },
+        "UC17-03": {
+          "permit": 1,
+          "remediate": 24
+        },
+        "UC17-04": {
+          "escalate": 1,
+          "remediate": 24
+        },
+        "UC17-05": {
+          "block": 23,
+          "escalate": 1,
+          "indeterminate": 1
+        },
+        "UC17-06": {
+          "escalate": 23,
+          "indeterminate": 1,
+          "permit": 1
+        },
+        "UC17-07": {
+          "block": 1,
+          "escalate": 3,
+          "indeterminate": 20,
+          "permit": 1
+        },
+        "UC17-09": {
+          "escalate": 1,
+          "indeterminate": 3,
+          "remediate": 21
+        }
+      },
+      "judge": "D",
+      "label": "J2",
+      "mean_per_round": 1.64,
+      "predicted_flag_probability": 0.006141393635056911,
+      "role": "justified dissenter",
+      "total_deviations": 41,
+      "wrong_items": 20
+    },
+    {
+      "by_direction": {
+        "more permissive": 54,
+        "more severe": 9,
+        "off-scale": 4
+      },
+      "expected_per_round": 2.565275859375,
+      "flagged": true,
+      "items": {
+        "UC17-01": {
+          "block": 2,
+          "permit": 21,
+          "remediate": 2
+        },
+        "UC17-02": {
+          "indeterminate": 1,
+          "permit": 24
+        },
+        "UC17-03": {
+          "block": 2,
+          "remediate": 23
+        },
+        "UC17-04": {
+          "escalate": 1,
+          "indeterminate": 1,
+          "permit": 2,
+          "remediate": 21
+        },
+        "UC17-05": {
+          "remediate": 25
+        },
+        "UC17-06": {
+          "block": 1,
+          "escalate": 22,
+          "permit": 1,
+          "remediate": 1
+        },
+        "UC17-07": {
+          "escalate": 1,
+          "indeterminate": 24
+        },
+        "UC17-09": {
+          "block": 2,
+          "permit": 1,
+          "remediate": 22
+        }
+      },
+      "judge": "P",
+      "label": "J6",
+      "mean_per_round": 2.68,
+      "predicted_flag_probability": 0.9997091523049049,
+      "role": "planted",
+      "total_deviations": 67,
+      "wrong_items": 43
+    }
+  ],
+  "rounds": 25,
+  "seed": 6156945943295693019,
+  "spec_version": "planted-judge-spec-1.0",
+  "threshold_total": 52.96431591796875,
+  "variant": "subtle"
+}
