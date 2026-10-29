@@ -1,0 +1,2431 @@
+{
+  "cases": [
+    "UC17-01",
+    "UC17-02",
+    "UC17-03",
+    "UC17-04",
+    "UC17-05",
+    "UC17-06",
+    "UC17-07",
+    "UC17-09"
+  ],
+  "judges": [
+    "J1",
+    "J2",
+    "J3",
+    "J4",
+    "J5",
+    "J6"
+  ],
+  "rounds": 25,
+  "spec_version": "planted-judge-spec-1.0",
+  "verdicts": [
+    {
+      "case": "UC17-01",
+      "round": 1,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "permit",
+        "J3": "permit",
+        "J4": "permit",
+        "J5": "permit",
+        "J6": "escalate"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 1,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 1,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 1,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "indeterminate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 1,
+      "verdicts": {
+        "J1": "block",
+        "J2": "block",
+        "J3": "block",
+        "J4": "block",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 1,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "escalate",
+        "J3": "escalate",
+        "J4": "escalate",
+        "J5": "escalate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 1,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "indeterminate",
+        "J3": "indeterminate",
+        "J4": "block",
+        "J5": "indeterminate",
+        "J6": "block"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 1,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 2,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "permit",
+        "J3": "permit",
+        "J4": "permit",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 2,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "indeterminate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 2,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 2,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "indeterminate",
+        "J4": "remediate",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 2,
+      "verdicts": {
+        "J1": "block",
+        "J2": "block",
+        "J3": "block",
+        "J4": "block",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 2,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "escalate",
+        "J3": "escalate",
+        "J4": "block",
+        "J5": "escalate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 2,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "indeterminate",
+        "J3": "indeterminate",
+        "J4": "indeterminate",
+        "J5": "indeterminate",
+        "J6": "indeterminate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 2,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "escalate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 3,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "permit",
+        "J3": "permit",
+        "J4": "permit",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 3,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "escalate"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 3,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 3,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 3,
+      "verdicts": {
+        "J1": "block",
+        "J2": "block",
+        "J3": "block",
+        "J4": "permit",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 3,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "block",
+        "J3": "escalate",
+        "J4": "escalate",
+        "J5": "escalate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 3,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "indeterminate",
+        "J3": "indeterminate",
+        "J4": "indeterminate",
+        "J5": "indeterminate",
+        "J6": "indeterminate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 3,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 4,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "permit",
+        "J3": "permit",
+        "J4": "permit",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 4,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 4,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 4,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 4,
+      "verdicts": {
+        "J1": "block",
+        "J2": "block",
+        "J3": "block",
+        "J4": "remediate",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 4,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "escalate",
+        "J3": "escalate",
+        "J4": "escalate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 4,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "indeterminate",
+        "J3": "indeterminate",
+        "J4": "indeterminate",
+        "J5": "permit",
+        "J6": "indeterminate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 4,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 5,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "permit",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "permit",
+        "J6": "remediate"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 5,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 5,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 5,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 5,
+      "verdicts": {
+        "J1": "block",
+        "J2": "remediate",
+        "J3": "block",
+        "J4": "block",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 5,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "escalate",
+        "J3": "escalate",
+        "J4": "escalate",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 5,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "indeterminate",
+        "J3": "indeterminate",
+        "J4": "indeterminate",
+        "J5": "escalate",
+        "J6": "indeterminate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 5,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 6,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "permit",
+        "J3": "permit",
+        "J4": "permit",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 6,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 6,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 6,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 6,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "remediate",
+        "J3": "block",
+        "J4": "block",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 6,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "escalate",
+        "J3": "escalate",
+        "J4": "escalate",
+        "J5": "escalate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 6,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "indeterminate",
+        "J3": "indeterminate",
+        "J4": "indeterminate",
+        "J5": "block",
+        "J6": "indeterminate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 6,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "indeterminate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 7,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "permit",
+        "J3": "permit",
+        "J4": "permit",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 7,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "escalate"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 7,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 7,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 7,
+      "verdicts": {
+        "J1": "block",
+        "J2": "block",
+        "J3": "block",
+        "J4": "block",
+        "J5": "indeterminate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 7,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "escalate",
+        "J3": "escalate",
+        "J4": "escalate",
+        "J5": "escalate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 7,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "indeterminate",
+        "J3": "indeterminate",
+        "J4": "indeterminate",
+        "J5": "indeterminate",
+        "J6": "indeterminate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 7,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "indeterminate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 8,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "permit",
+        "J3": "permit",
+        "J4": "permit",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 8,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 8,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "indeterminate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 8,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 8,
+      "verdicts": {
+        "J1": "block",
+        "J2": "block",
+        "J3": "block",
+        "J4": "block",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 8,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "escalate",
+        "J3": "escalate",
+        "J4": "escalate",
+        "J5": "escalate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 8,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "indeterminate",
+        "J3": "indeterminate",
+        "J4": "indeterminate",
+        "J5": "indeterminate",
+        "J6": "indeterminate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 8,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 9,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "permit",
+        "J3": "permit",
+        "J4": "permit",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 9,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "indeterminate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 9,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "escalate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 9,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 9,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "block",
+        "J3": "block",
+        "J4": "block",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 9,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "escalate",
+        "J3": "escalate",
+        "J4": "escalate",
+        "J5": "escalate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 9,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "indeterminate",
+        "J3": "indeterminate",
+        "J4": "indeterminate",
+        "J5": "indeterminate",
+        "J6": "indeterminate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 9,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 10,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "permit",
+        "J3": "permit",
+        "J4": "permit",
+        "J5": "escalate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 10,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 10,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 10,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 10,
+      "verdicts": {
+        "J1": "block",
+        "J2": "block",
+        "J3": "block",
+        "J4": "escalate",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 10,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "escalate",
+        "J3": "escalate",
+        "J4": "escalate",
+        "J5": "escalate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 10,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "indeterminate",
+        "J3": "indeterminate",
+        "J4": "indeterminate",
+        "J5": "indeterminate",
+        "J6": "indeterminate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 10,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 11,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "permit",
+        "J3": "permit",
+        "J4": "permit",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 11,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 11,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 11,
+      "verdicts": {
+        "J1": "block",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 11,
+      "verdicts": {
+        "J1": "block",
+        "J2": "block",
+        "J3": "block",
+        "J4": "block",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 11,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "escalate",
+        "J3": "escalate",
+        "J4": "escalate",
+        "J5": "escalate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 11,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "indeterminate",
+        "J3": "remediate",
+        "J4": "indeterminate",
+        "J5": "indeterminate",
+        "J6": "indeterminate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 11,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 12,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "indeterminate",
+        "J3": "permit",
+        "J4": "permit",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 12,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 12,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 12,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 12,
+      "verdicts": {
+        "J1": "block",
+        "J2": "escalate",
+        "J3": "block",
+        "J4": "block",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 12,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "escalate",
+        "J3": "escalate",
+        "J4": "escalate",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 12,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "block",
+        "J3": "indeterminate",
+        "J4": "indeterminate",
+        "J5": "indeterminate",
+        "J6": "indeterminate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 12,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 13,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "permit",
+        "J3": "permit",
+        "J4": "permit",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 13,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 13,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "block",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 13,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "permit",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 13,
+      "verdicts": {
+        "J1": "block",
+        "J2": "block",
+        "J3": "block",
+        "J4": "block",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 13,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "escalate",
+        "J3": "escalate",
+        "J4": "escalate",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 13,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "indeterminate",
+        "J3": "indeterminate",
+        "J4": "indeterminate",
+        "J5": "indeterminate",
+        "J6": "indeterminate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 13,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 14,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "permit",
+        "J3": "permit",
+        "J4": "permit",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 14,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 14,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 14,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "permit",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 14,
+      "verdicts": {
+        "J1": "block",
+        "J2": "block",
+        "J3": "block",
+        "J4": "block",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 14,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "escalate",
+        "J3": "escalate",
+        "J4": "permit",
+        "J5": "escalate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 14,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "indeterminate",
+        "J3": "indeterminate",
+        "J4": "indeterminate",
+        "J5": "remediate",
+        "J6": "block"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 14,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 15,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "permit",
+        "J3": "permit",
+        "J4": "permit",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 15,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 15,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 15,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 15,
+      "verdicts": {
+        "J1": "block",
+        "J2": "permit",
+        "J3": "block",
+        "J4": "block",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 15,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "escalate",
+        "J3": "escalate",
+        "J4": "escalate",
+        "J5": "escalate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 15,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "indeterminate",
+        "J3": "indeterminate",
+        "J4": "indeterminate",
+        "J5": "indeterminate",
+        "J6": "indeterminate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 15,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 16,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "permit",
+        "J3": "permit",
+        "J4": "permit",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 16,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "remediate"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 16,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 16,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 16,
+      "verdicts": {
+        "J1": "block",
+        "J2": "block",
+        "J3": "block",
+        "J4": "remediate",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 16,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "escalate",
+        "J3": "escalate",
+        "J4": "block",
+        "J5": "escalate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 16,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "indeterminate",
+        "J3": "indeterminate",
+        "J4": "indeterminate",
+        "J5": "indeterminate",
+        "J6": "indeterminate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 16,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 17,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "permit",
+        "J3": "permit",
+        "J4": "permit",
+        "J5": "permit",
+        "J6": "remediate"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 17,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 17,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 17,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "permit",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 17,
+      "verdicts": {
+        "J1": "block",
+        "J2": "block",
+        "J3": "block",
+        "J4": "block",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 17,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "escalate",
+        "J3": "escalate",
+        "J4": "escalate",
+        "J5": "escalate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 17,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "indeterminate",
+        "J3": "escalate",
+        "J4": "indeterminate",
+        "J5": "indeterminate",
+        "J6": "indeterminate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 17,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 18,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "escalate",
+        "J3": "permit",
+        "J4": "permit",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 18,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "indeterminate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 18,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "escalate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 18,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 18,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "block",
+        "J3": "block",
+        "J4": "block",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 18,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "escalate",
+        "J3": "escalate",
+        "J4": "escalate",
+        "J5": "escalate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 18,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "indeterminate",
+        "J3": "indeterminate",
+        "J4": "indeterminate",
+        "J5": "permit",
+        "J6": "indeterminate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 18,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 19,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "permit",
+        "J3": "permit",
+        "J4": "permit",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 19,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 19,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "indeterminate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 19,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 19,
+      "verdicts": {
+        "J1": "block",
+        "J2": "block",
+        "J3": "indeterminate",
+        "J4": "block",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 19,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "block",
+        "J3": "escalate",
+        "J4": "escalate",
+        "J5": "escalate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 19,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "indeterminate",
+        "J3": "remediate",
+        "J4": "indeterminate",
+        "J5": "indeterminate",
+        "J6": "indeterminate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 19,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 20,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "permit",
+        "J3": "permit",
+        "J4": "permit",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 20,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 20,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 20,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 20,
+      "verdicts": {
+        "J1": "block",
+        "J2": "block",
+        "J3": "block",
+        "J4": "block",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 20,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "escalate",
+        "J3": "escalate",
+        "J4": "escalate",
+        "J5": "escalate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 20,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "permit",
+        "J3": "indeterminate",
+        "J4": "indeterminate",
+        "J5": "remediate",
+        "J6": "indeterminate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 20,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 21,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "permit",
+        "J3": "escalate",
+        "J4": "block",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 21,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 21,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 21,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 21,
+      "verdicts": {
+        "J1": "block",
+        "J2": "block",
+        "J3": "block",
+        "J4": "block",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 21,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "escalate",
+        "J3": "remediate",
+        "J4": "escalate",
+        "J5": "escalate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 21,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "indeterminate",
+        "J3": "indeterminate",
+        "J4": "escalate",
+        "J5": "indeterminate",
+        "J6": "escalate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 21,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 22,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "permit",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 22,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 22,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 22,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 22,
+      "verdicts": {
+        "J1": "block",
+        "J2": "block",
+        "J3": "block",
+        "J4": "block",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 22,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "escalate",
+        "J3": "escalate",
+        "J4": "escalate",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 22,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "indeterminate",
+        "J3": "indeterminate",
+        "J4": "indeterminate",
+        "J5": "indeterminate",
+        "J6": "indeterminate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 22,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 23,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "permit",
+        "J3": "permit",
+        "J4": "permit",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 23,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 23,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "escalate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 23,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "escalate",
+        "J3": "remediate",
+        "J4": "permit",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 23,
+      "verdicts": {
+        "J1": "block",
+        "J2": "block",
+        "J3": "block",
+        "J4": "block",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 23,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "escalate",
+        "J3": "escalate",
+        "J4": "escalate",
+        "J5": "escalate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 23,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "indeterminate",
+        "J3": "indeterminate",
+        "J4": "indeterminate",
+        "J5": "permit",
+        "J6": "indeterminate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 23,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "indeterminate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 24,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "permit",
+        "J3": "permit",
+        "J4": "permit",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 24,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "permit",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 24,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 24,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 24,
+      "verdicts": {
+        "J1": "block",
+        "J2": "block",
+        "J3": "block",
+        "J4": "block",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 24,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "escalate",
+        "J3": "escalate",
+        "J4": "escalate",
+        "J5": "escalate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 24,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "indeterminate",
+        "J3": "indeterminate",
+        "J4": "indeterminate",
+        "J5": "indeterminate",
+        "J6": "indeterminate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 24,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-01",
+      "round": 25,
+      "verdicts": {
+        "J1": "permit",
+        "J2": "permit",
+        "J3": "permit",
+        "J4": "permit",
+        "J5": "permit",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-02",
+      "round": 25,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "escalate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-03",
+      "round": 25,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-04",
+      "round": 25,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "remediate",
+        "J3": "remediate",
+        "J4": "remediate",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-05",
+      "round": 25,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "block",
+        "J3": "block",
+        "J4": "block",
+        "J5": "block",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-06",
+      "round": 25,
+      "verdicts": {
+        "J1": "escalate",
+        "J2": "remediate",
+        "J3": "escalate",
+        "J4": "escalate",
+        "J5": "escalate",
+        "J6": "permit"
+      }
+    },
+    {
+      "case": "UC17-07",
+      "round": 25,
+      "verdicts": {
+        "J1": "indeterminate",
+        "J2": "indeterminate",
+        "J3": "block",
+        "J4": "indeterminate",
+        "J5": "indeterminate",
+        "J6": "indeterminate"
+      }
+    },
+    {
+      "case": "UC17-09",
+      "round": 25,
+      "verdicts": {
+        "J1": "remediate",
+        "J2": "remediate",
+        "J3": "block",
+        "J4": "permit",
+        "J5": "remediate",
+        "J6": "permit"
+      }
+    }
+  ],
+  "vocabulary": [
+    "permit",
+    "remediate",
+    "escalate",
+    "block",
+    "indeterminate"
+  ]
+}
