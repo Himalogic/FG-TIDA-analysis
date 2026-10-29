@@ -1,0 +1,23 @@
+{
+  "archive_sha256": "10d721acc44228edaa769719d1ff6eac90fdab2576317a7621cc05eaced33d13",
+  "relabel": {
+    "J1": "P",
+    "J2": "D",
+    "J3": "H2",
+    "J4": "H1",
+    "J5": "H4",
+    "J6": "H3"
+  },
+  "roles": {
+    "J1": "planted",
+    "J2": "justified dissenter",
+    "J3": "honest",
+    "J4": "honest",
+    "J5": "honest",
+    "J6": "honest"
+  },
+  "rounds": 5,
+  "seed": 11092365433631021930,
+  "spec_version": "planted-judge-spec-1.0",
+  "variant": "subtle"
+}
