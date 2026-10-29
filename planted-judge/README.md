@@ -2,6 +2,8 @@
 
 Version 1.0, posted for review 11 October 2026. FG-TIDA theme #21, "Reading evaluation at population scale." Proposer: Justin Philip Flores.
 
+**Results added 29 October 2026, in section 15.** Sections 1 to 13 are unchanged from the tagged version `planted-judge-spec-1.0`.
+
 This specification and its acceptance criteria are posted before any run. Changes after review go into a new version of this document. The acceptance criteria are never changed after a run.
 
 ## 1. Purpose
@@ -182,24 +184,113 @@ Every expected verdict came from one person. The demonstration does not test whe
 
 ## 14. Files
 
-Present now:
-
 ```
 planted-judge/
-  README.md      this specification, then results once run
+  README.md      this specification, then results (section 15)
   expected.py    exact expected values and flag probabilities (section 7, section 10)
+  generate.py    verdicts from the script, fixture pinned by SHA-256
+  detect.py      blind detection
+  unblind.py     report after flags are recorded
+  runs/          one folder per run: verdicts.json, sealed.json, flags.json, report.json, report.md
 ```
 
 The code is covered by the MIT license at the root of this repository.
 
-To be added after review and before any run, as specified in section 9:
-
-```
-  generate.py    verdicts from the script, fixture pinned by SHA-256
-  detect.py      blind detection
-  unblind.py     report after flags are recorded
-```
-
 To reproduce every number in sections 7, 8 and 10: `python3 expected.py path/to/tida6-fx-0.2.zip`. It refuses to run on any archive but the pinned one, checks the manifest, and confirms the answer key matches section 4.
+
+To reproduce a run, for example the subtle variant at 25 rounds:
+
+```
+python3 generate.py tida6-fx-0.2.zip subtle 25 runs/subtle-r25
+python3 detect.py runs/subtle-r25
+python3 expected.py tida6-fx-0.2.zip --json expected.json
+python3 unblind.py runs/subtle-r25 tida6-fx-0.2.zip <sealed.json digest printed by generate.py> expected.json
+```
+
+The seeds are fixed by section 8, so each run reproduces byte for byte.
+
+## 15. Results
+
+Run 29 October 2026. All six runs were generated first, then all six were detected, then all six were unblinded, in the order section 9 sets out. `generate.py`'s draw order, documented at the top of that file, was written before the first run and is part of this version of the specification.
+
+### Flags and deviation counts
+
+Total deviations over the run, with the flag (✔) as `detect.py` recorded it before unblinding. The flag threshold is 2.1186 times the number of rounds.
+
+| Variant | Rounds | Flag if total > | H1 | H2 | H3 | H4 | D | P |
+|---|---|---|---|---|---|---|---|---|
+| subtle | 1 | 2.12 | 0 | 1 | 1 | 0 | 2 | 2 |
+| subtle | 5 | 10.59 | 0 | 2 | 4 | 2 | 12 ✔ | 14 ✔ |
+| subtle | 25 | 52.96 | 17 | 21 | 19 | 17 | 41 | 67 ✔ |
+| gross | 1 | 2.12 | 0 | 0 | 0 | 0 | 1 | 6 ✔ |
+| gross | 5 | 10.59 | 7 | 2 | 4 | 2 | 9 | 30 ✔ |
+| gross | 25 | 52.96 | 26 | 16 | 18 | 18 | 40 | 155 ✔ |
+
+Mean deviations per round at 25 rounds, observed against expected (section 7): honest judges 0.68 to 0.84 (expected 0.697) in the subtle runs and 0.64 to 1.04 (expected 0.692) in the gross runs; dissenter 1.64 and 1.60 (expected 1.672 and 1.667); subtle planted judge 2.68 (expected 2.565); gross planted judge 6.20 (expected 6.134).
+
+### Against the acceptance criteria
+
+| ID | Predicted | Observed |
+|---|---|---|
+| AC-1 | Flags recorded from verdicts alone, before unblinding | Pass. `detect.py` opens only `verdicts.json`. Each `flags.json` records the digest of the `verdicts.json` it read, and `unblind.py` refuses to run if that digest or the `sealed.json` digest printed by `generate.py` does not match. |
+| AC-2 | Gross planted judge flagged at 1, 5 and 25 rounds | Flagged in all three runs. |
+| AC-3 | Subtle planted judge flagged with probability 46%, 93%, 99.97% at 1, 5, 25 rounds | Not flagged at 1 round (2 deviations, threshold 2.12). Flagged at 5 and 25 rounds. |
+| AC-4 | Dissenter not flagged at 25 rounds; at 1 and 5 rounds it can be (15%, 12%) | Not flagged at 25 rounds in either variant. **Flagged in the subtle 5-round run** (12 deviations, threshold 10.59), an outcome given a 12% chance in advance. Not flagged in the other five runs. |
+| AC-5 | Shared blind spot never detected | Held in all six runs. The majority verdict on UC17-02 was remediate in every round of every run, and nothing in any `flags.json` marks it as wrong. |
+| AC-6 | Honest judges' independence declared, never established | Held. The four honest judges gave the same verdict on UC17-02 (remediate) in every round of every run. |
+| AC-7 | After unblinding: planted judge wrong on its changed cases; dissenter right on UC17-02; majority wrong on UC17-02 | Planted judge gave its planted verdict on every changed case in every round. Majority wrong on UC17-02 in every round. The dissenter gave the correct verdict (permit) on UC17-02 in 1 of 1, 5 of 5 and 21 of 25 rounds (subtle) and 1 of 1, 4 of 5 and 20 of 25 rounds (gross); in the other rounds it made one of its section 6 random errors on that case. |
+| AC-8 | Honest judges not flagged at 5 or 25 rounds; about 1 in 10 chance one is flagged at 1 round | No honest judge was flagged in any run. |
+
+### What the runs show
+
+1. **A planted judge is caught from verdicts alone, given enough rounds.** The gross planted judge was flagged from the first round. The subtle one, which changes a single case, looked like noise after one round and was flagged at 5 and 25.
+2. **Few rounds can accuse the wrong judge.** At 5 rounds in the subtle variant the justified dissenter was flagged alongside the planted judge. Its only systematic difference from the majority was being right on UC17-02. In the 25-round run it was not flagged, and only the planted judge was. Deviation from a majority is evidence of difference, and needs enough records before it can be read as evidence of error.
+3. **Agreement is not correctness.** The four honest judges agreed on the wrong verdict for UC17-02 in all 62 rounds across the six runs. The majority rule treated that shared error as the reference every time, and more rounds only added agreement. Nothing visible to the detection procedure can reveal it.
+
+This is a scripted mechanism demonstration. It is not evidence about independent judges, real evaluators or any model's performance (section 1).
+
+### Change after the first unblinding
+
+The first `unblind.py` output checked "dissenter right on UC17-02" as true or false across all rounds. That was stricter than section 6, which gives the dissenter the same 10% random error on UC17-02 as on every other case, so it read false in three runs. The check now reports the count of rounds in which the dissenter was right, shown in the AC-7 row above. In the same edit, a probability stored as a float that rounds to 1.0 is now printed as ">99.99%" and no longer as "100%". Neither change touches `generate.py`, `detect.py`, any verdict, any deviation count or any flag. All six reports were regenerated from the same sealed files.
+
+### Run digests
+
+SHA-256 of each run's three files.
+
+**subtle, 1 round** (seed 8179621580379247944)
+
+- verdicts.json: `de5cc0aec40035291fab1a8fccbfb4060bc4c0d809a3419d31dc89b844f87917`
+- sealed.json: `8c97ca1bf3e343af7a7de67ac90d635ceb57aff257d50e371136e219fceee417`
+- flags.json: `35afe77bc823f66bd60bcee5096c128792698a131e9a977749949ed50aaa1d9c`
+
+**subtle, 5 rounds** (seed 11092365433631021930)
+
+- verdicts.json: `454e862560476883d1f9b8b62c0235fad7fa8d06e58d3ccf820ba37b93957a26`
+- sealed.json: `5d7c2dfce57cd37a6db0e45289de2b4747b86055fa3ba6a8a509d60a71941e95`
+- flags.json: `02615ef0fd055b6fbace25d2cda865f9f49e4632c40974d2764962af6a796e7d`
+
+**subtle, 25 rounds** (seed 6156945943295693019)
+
+- verdicts.json: `ed1b9fb2fcbe4b8882a6750cb450dd594ad23c4eb5b4b5332febfcc6a3bcae8c`
+- sealed.json: `ab83e9ed9fb9c7f4313db9589861e343f40f57539d8133b1bab3c17a982dc6f4`
+- flags.json: `0be3180af9a886ab8352d9804d41740eab0eab5e1f9df421dba4ab69beb77bc7`
+
+**gross, 1 round** (seed 8298801014475031433)
+
+- verdicts.json: `19cc59f62ed28c88fe5a8a7009ca66587260ead9ea9bee84011152e5aff5feb4`
+- sealed.json: `3c401a83607b17b4980abb9bab23b58663400d37e3a1ff77c1169c43c375afda`
+- flags.json: `26a586103692cb8b18bf2e39fc669a45824a687494d6fc6d8bad433871337c10`
+
+**gross, 5 rounds** (seed 15652758213012786834)
+
+- verdicts.json: `795199fe7b97db0c4d81a755eaffefc5bc6444c862db5481842793052513c1bc`
+- sealed.json: `70b7df653983faa04ea26f454f2db089246905405c9582e1ca83af1831202167`
+- flags.json: `1225ba58184a52ee4a030818673ace2b07a1a4dc688f98c2010c41f7bd76a92f`
+
+**gross, 25 rounds** (seed 5751662010846276138)
+
+- verdicts.json: `58af00342c510e57937b2e00a6a688fb92bbbe757dc19c00aff05517d8ef0713`
+- sealed.json: `dc2c47a324f152ed1a12f39b2b3226623cf972c233454765649ffdab42fc72f2`
+- flags.json: `9478fcb8232cec92599f295a19e787a645f170bcf815eaf4d6c0f3026f22d6c4`
 
 Justin Philip Flores
