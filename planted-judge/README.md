@@ -1,8 +1,8 @@
 # Planted-judge demonstration on TIDA6-FX-0.2: specification and acceptance criteria
 
-Version 1.0, posted for review 11 October 2026. FG-TIDA theme #21, "Reading evaluation at population scale." Proposer: Justin Philip Flores.
+Version 1.1, 10 November 2026 (version 1.0 posted for review 11 October 2026). FG-TIDA theme #21, "Reading evaluation at population scale." Proposer: Justin Philip Flores.
 
-**Results added 29 October 2026, in section 15.** Sections 1 to 13 are unchanged from the tagged version `planted-judge-spec-1.0`.
+**Results added 29 October 2026, in section 15. Version 1.1 added 10 November 2026, in section 16.** Sections 1 to 13 are unchanged from the tagged version `planted-judge-spec-1.0`, and the six runs in section 15 are judged against them. Version 1.1 corrects the wording of AC-7 only, and applies to any later run.
 
 This specification and its acceptance criteria are posted before any run. Changes after review go into a new version of this document. The acceptance criteria are never changed after a run.
 
@@ -186,7 +186,7 @@ Every expected verdict came from one person. The demonstration does not test whe
 
 ```
 planted-judge/
-  README.md      this specification, then results (section 15)
+  README.md      this specification, results (section 15) and version 1.1 (section 16)
   expected.py    exact expected values and flag probabilities (section 7, section 10)
   generate.py    verdicts from the script, fixture pinned by SHA-256
   detect.py      blind detection
@@ -251,7 +251,7 @@ This is a scripted mechanism demonstration. It is not evidence about independent
 
 ### AC-7 wording defect
 
-AC-7 says "the dissenter is right on UC17-02." That wording contradicted section 6 before any run: section 6 gives the dissenter the same 10% random error on UC17-02 as on every other case, so in a run of several rounds it is expected to be wrong there some of the time. As written, AC-7 was not met in three runs (subtle 25, gross 5, gross 25), for the reason section 6 predicts. This is recorded as a defect in the specification. The wording will be corrected in specification 1.1 to state the expectation per round, consistent with section 6. The acceptance criteria in this version are not changed after the run. (Thanks to Cyril Gorlla for the framing, FG-TIDA/themes#21, 29 October 2026.)
+AC-7 says "the dissenter is right on UC17-02." That wording contradicted section 6 before any run: section 6 gives the dissenter the same 10% random error on UC17-02 as on every other case, so in a run of several rounds it is expected to be wrong there some of the time. As written, AC-7 was not met in three runs (subtle 25, gross 5, gross 25), for the reason section 6 predicts. This is recorded as a defect in the specification. The wording is corrected in specification 1.1 (section 16) to state the expectation per round, consistent with section 6. The acceptance criteria in this version are not changed after the run. (Thanks to Cyril Gorlla for the framing, FG-TIDA/themes#21, 29 October 2026.)
 
 The first `unblind.py` output checked this criterion as true or false across all rounds. After the first unblinding, the check was changed to report the count of rounds in which the dissenter was right, shown in the AC-7 row above. In the same edit, a probability stored as a float that rounds to 1.0 is now printed as ">99.99%" and no longer as "100%". Neither change touches `generate.py`, `detect.py`, any verdict, any deviation count or any flag. All six reports were regenerated from the same sealed files.
 
@@ -294,5 +294,21 @@ SHA-256 of each run's three files.
 - verdicts.json: `58af00342c510e57937b2e00a6a688fb92bbbe757dc19c00aff05517d8ef0713`
 - sealed.json: `dc2c47a324f152ed1a12f39b2b3226623cf972c233454765649ffdab42fc72f2`
 - flags.json: `9478fcb8232cec92599f295a19e787a645f170bcf815eaf4d6c0f3026f22d6c4`
+
+## 16. Specification 1.1
+
+Version 1.1 makes one change: the wording of AC-7, which as written in 1.0 contradicted section 6 (see "AC-7 wording defect" in section 15). Nothing else changes. The judges, error model, detection rule, threshold, seeds, draw order and code are the same, so a run under 1.1 at the same variant and round count reproduces the 1.0 run byte for byte. The seed string in section 8 keeps its fixed text `planted-judge-spec-1.0`.
+
+The six runs in section 15 were scored against 1.0 and stay that way. Their AC-7 result is recorded there as not met as written.
+
+AC-7 in version 1.1:
+
+| ID | Criterion | Predicted result |
+|---|---|---|
+| AC-7 | After unblinding | The planted judge gives its planted verdict on every changed case in every round, since those cases are fixed (section 6). The honest majority is wrong on UC17-02 in every round, since that case is fixed for H1 to H4. The dissenter's UC17-02 verdict is not fixed and carries the 10% random error of section 6, so it is right in each round with probability 90%. The number of rounds in which it is right is reported as a count, with expected value 0.9 times the round count (0.9, 4.5 and 22.5 at 1, 5 and 25 rounds). A count below that is reported and is not a failure. |
+
+Read against this wording, the counts already in section 15 (subtle 1 of 1, 5 of 5, 21 of 25; gross 1 of 1, 4 of 5, 20 of 25) are consistent with section 6. That reading is given for information only; the 1.0 result stands.
+
+The first and second parts of AC-7 are deterministic under the script, so in 1.1 they are checks that the generator followed it. The third part is the only probabilistic one.
 
 Justin Philip Flores
